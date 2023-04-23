@@ -1,12 +1,13 @@
 /* Header */
 .menu {
+    background-color: moccasin;
     display: flex;
     margin: auto;
 }
 
 .menu h1 {
-    /* background-color: chocolate; */
-    font-size: 32px;
+    background-color: royalblue;
+    font-size: 48px;
     width: fit-content;
     
 }
@@ -16,7 +17,7 @@
     margin-top: auto;
     font-size: 24px;
     text-align: right;
-    width: fit-content;    
+    width: fit-content;
 }
 
 /* footer */
