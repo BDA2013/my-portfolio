@@ -1,12 +1,18 @@
+:root {
+    --default-background: lightblue;
+    --title-head: royalblue;
+
+}
+
 /* Header */
 .menu {
-    background-color: moccasin;
+    background-color: var(--default-background);
     display: flex;
     margin: auto;
 }
 
 .menu h1 {
-    background-color: royalblue;
+    background-color: var(--title-head);
     font-size: 48px;
     width: fit-content;
     
@@ -20,20 +26,17 @@
     width: fit-content;
 }
 
+
 /* footer */
+footer {
+    background-color: var(--default-background);
+    display: block;
+    margin: auto;
+}
+
 .contact-me {
     display: flex;
-    margin: auto;
-    height: auto;
+    justify-content: space-between;
+    width: fit-content;
     margin-left: 35%;
-}
-
-.email {
-    width: fit-content;
-    margin-right: 3%;
-}
-
-.phone {
-    width: fit-content;
-    margin-left: 3%;
 }
