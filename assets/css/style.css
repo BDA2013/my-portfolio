@@ -1,10 +1,10 @@
 :root {
     --default-background: lightblue;
-    --title-head: royalblue;
-
+    --body-background: aliceblue;
+    --title-head: #1da1f2;
 }
 
-/* Header */
+/* Header & body */
 .menu {
     background-color: var(--default-background);
     display: flex;
@@ -24,6 +24,20 @@
     font-size: 24px;
     text-align: right;
     width: fit-content;
+}
+
+body {
+    background-color: var(--body-background);
+}
+
+/* Biography */
+.bio-image {
+    border-style: solid;
+}
+
+.bio-info {
+    border-style: solid;
+    
 }
 
 
