@@ -34,12 +34,22 @@ body {
 .bio-image {
     border-style: solid;
     margin-right: 75%;
+    
 }
 
 .bio-info {
     border-style: solid;
-    margin-left: 30%;
-    
+    margin-left: 25%;
+}
+
+/* Past Projects */
+.project-container {
+    display: flex;
+}
+
+.project-card {
+    border-style: solid;
+
 }
 
 
