@@ -31,25 +31,60 @@ body {
 }
 
 /* Biography */
+
+.my-bio {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
 .bio-image {
-    border-style: solid;
-    margin-right: 75%;
+    width: 250px;
     
 }
 
+img {
+    width: 100%;
+    height: auto;
+}
 .bio-info {
     border-style: solid;
-    margin-left: 25%;
+    margin-left: 5%;
+    width: 500px;
 }
 
 /* Past Projects */
-.project-container {
+
+.projects-container {
     display: flex;
+    flex-direction: row;
+
 }
 
-.project-card {
+.project-card1 {
     border-style: solid;
+    width: 25.4%;
+    height: 200px;
+    background-image: url("../images/study-guide.png");
+    background-color: var(--default-background);
+}
 
+.project-card2 {
+    border-style: solid;
+    margin: 40px;
+    width: 22.4%;
+    height: 100px;
+    background-image: url();
+    background-color: var(--default-background);
+}
+
+.project-info {
+    background-color: var(--body-background);
+    width: fit-content;
+}
+
+.project-info .name {
+    font-weight: bold;
 }
 
 
