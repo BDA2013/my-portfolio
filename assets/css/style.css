@@ -45,12 +45,13 @@ body {
 
 img {
     width: 100%;
+    margin-left: 10%;
     height: auto;
 }
 .bio-info {
     border-style: solid;
     margin-left: 5%;
-    width: 500px;
+    width: 700px;
 }
 
 /* Past Projects */
@@ -63,7 +64,7 @@ img {
 
 .project-card1 {
     border-style: solid;
-    width: 25.4%;
+    width: 22.4%;
     height: 200px;
     background-image: url("../images/study-guide.png");
     background-color: var(--default-background);
