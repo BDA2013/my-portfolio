@@ -79,6 +79,10 @@ img {
     background-color: var(--default-background);
 }
 
+.riseUp {
+    background-image: url("../images/clouds.avif");
+}
+
 .project-info {
     background-color: var(--body-background);
     width: fit-content;
