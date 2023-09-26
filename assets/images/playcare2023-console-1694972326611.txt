@@ -1,0 +1,25 @@
+
+> playcare@1.0.0 seed
+> node seeders/seeds.js
+
+Executing (default): DROP TABLE IF EXISTS `user`;
+Executing (default): DROP TABLE IF EXISTS `child`;
+Executing (default): SELECT CONSTRAINT_NAME as constraint_name,CONSTRAINT_NAME as constraintName,CONSTRAINT_SCHEMA as constraintSchema,CONSTRAINT_SCHEMA as constraintCatalog,TABLE_NAME as tableName,TABLE_SCHEMA as tableSchema,TABLE_SCHEMA as tableCatalog,COLUMN_NAME as columnName,REFERENCED_TABLE_SCHEMA as referencedTableSchema,REFERENCED_TABLE_SCHEMA as referencedTableCatalog,REFERENCED_TABLE_NAME as referencedTableName,REFERENCED_COLUMN_NAME as referencedColumnName FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE where TABLE_NAME = 'child' AND CONSTRAINT_NAME!='PRIMARY' AND CONSTRAINT_SCHEMA='u571418y5ga2wd49' AND REFERENCED_TABLE_NAME IS NOT NULL;
+Executing (default): SELECT CONSTRAINT_NAME as constraint_name,CONSTRAINT_NAME as constraintName,CONSTRAINT_SCHEMA as constraintSchema,CONSTRAINT_SCHEMA as constraintCatalog,TABLE_NAME as tableName,TABLE_SCHEMA as tableSchema,TABLE_SCHEMA as tableCatalog,COLUMN_NAME as columnName,REFERENCED_TABLE_SCHEMA as referencedTableSchema,REFERENCED_TABLE_SCHEMA as referencedTableCatalog,REFERENCED_TABLE_NAME as referencedTableName,REFERENCED_COLUMN_NAME as referencedColumnName FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE where TABLE_NAME = 'user' AND CONSTRAINT_NAME!='PRIMARY' AND CONSTRAINT_SCHEMA='u571418y5ga2wd49' AND REFERENCED_TABLE_NAME IS NOT NULL;
+Executing (default): DROP TABLE IF EXISTS `child`;
+Executing (default): DROP TABLE IF EXISTS `user`;
+Executing (default): DROP TABLE IF EXISTS `child`;
+Executing (default): CREATE TABLE IF NOT EXISTS `child` (`id` INTEGER NOT NULL auto_increment , `first_name` VARCHAR(255) NOT NULL, `last_name` VARCHAR(255) NOT NULL, `parent_email` VARCHAR(255) NOT NULL UNIQUE, `parent_phone` VARCHAR(255) NOT NULL UNIQUE, `admission_date` DATETIME, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+Executing (default): SHOW INDEX FROM `child`
+Executing (default): DROP TABLE IF EXISTS `user`;
+Executing (default): CREATE TABLE IF NOT EXISTS `user` (`id` INTEGER NOT NULL auto_increment , `username` VARCHAR(255) NOT NULL, `email` VARCHAR(255) NOT NULL UNIQUE, `password` VARCHAR(255) NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+Executing (default): SHOW INDEX FROM `user`
+Error seeding the database: TypeError: Cannot read properties of undefined (reading 'bulkCreate')
+    at seedFirstnames (/app/seeders/firstname.js:22:40)
+    at seedAll (/app/seeders/seeds.js:11:11)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+npm notice 
+npm notice New major version of npm available! 9.6.7 -> 10.1.0
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v10.1.0
+npm notice Run npm install -g npm@10.1.0 to update!
+npm notice 
